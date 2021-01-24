@@ -20,10 +20,11 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	ball=new paper(50,605,25);
-	bin1=new dustbin(590,595,14,70)
-	bin2=new dustbin(700,595,14,70);
-	bin3=new dustbin(644,623,97,14)
+	ball=new paper(100,499,60,50);
+	
+	//bin1=new dustbin(590,595,14,70)
+	//bin2=new dustbin(700,595,14,70);
+	bin3=new dustbin(644,1025,97,1004)
 	//var option1={
 	//	isStatic:true,
 	//}
@@ -37,11 +38,11 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(200);
   ball.display();
  
-  bin1.display();
-  bin2.display();
+//  bin1.display();
+//  bin2.display();
   bin3.display();
  ground1.display();
  // drawSprites();
